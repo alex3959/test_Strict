@@ -1,17 +1,6 @@
 @font-face {
-  font-family: BebasNeueBold;
-  src: url(../fonts/BebasNeue-Bold.ttf); }
-@font-face {
-  font-family: Lato-Black;
-  src: url(../fonts/Lato-Black.ttf); }
-@font-face {
-  font-family: Lato-Medium;
-  src: url(../fonts/Lato-Medium.ttf); }
+  font-family: Lato-Bold;
+  src: url(../fonts/Lato-Bold.ttf); }
 @font-face {
   font-family: Lato-Regular;
   src: url(../fonts/Lato-Regular.ttf); }
-@font-face {
-  font-family: Lato-SemiBold;
-  src: url(../fonts/Lato-SemiBold.ttf); }
-
-/*# sourceMappingURL=variables.css.map */
