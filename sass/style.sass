@@ -343,10 +343,16 @@ body
 .form-button-wrap
     display: flex
     justify-content: space-between
-
+    flex-wrap: wrap
+    & button
+        @media (max-width: 360.98px)
+            width: 100%
 .checkbox
     margin-top: 6px
     color: $form-font-color
+    @media (max-width: 360.98px)
+        margin-top: 0
+        margin-bottom: 8px
     & input
         width: unset
         margin-right: 15px
@@ -376,6 +382,8 @@ body
     list-style: none
     margin: 0
     padding: 0
+    @media (max-width: 360.98px)
+        margin-top: 10px
     & li
         margin-left: 5px
 

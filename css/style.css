@@ -396,11 +396,20 @@ body {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media (max-width: 360.98px) {
+    .form-button-wrap button {
+      width: 100%; } }
 
 .checkbox {
   margin-top: 6px;
   color: #999999; }
+  @media (max-width: 360.98px) {
+    .checkbox {
+      margin-top: 0;
+      margin-bottom: 8px; } }
   .checkbox input {
     width: unset;
     margin-right: 15px;
@@ -437,6 +446,9 @@ body {
   list-style: none;
   margin: 0;
   padding: 0; }
+  @media (max-width: 360.98px) {
+    .footer-list {
+      margin-top: 10px; } }
   .footer-list li {
     margin-left: 5px; }
 
