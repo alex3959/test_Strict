@@ -6,28 +6,32 @@ $(function () {
   new WOW().init();
 })
 
-let headerSection = document.querySelector('.header-section');
-let buttonTop = document.querySelector('.to-top');
+let navBtn = document.getElementById('nav-button');
+let listClose = document.querySelector('.list_close')
+let listWrap = document.getElementById('list-wrap');
+let navList = document.querySelector('.nav-list')
 
-headerSection.addEventListener('mouseleave', function () {
-  if (buttonTop.classList.contains('hide')) {
-    buttonTop.classList.remove('hide');
-    buttonTop.classList.add('show');
+navBtn.onclick = function () {
+  listWrap.classList.add('show')
+  document.body.style.overflow = 'hidden'
+  if (listWrap.classList.contains('hide')) {
+    listWrap.classList.remove('hide')
   }
-})
+  navList.classList.add('listShow')
+}
 
-headerSection.addEventListener('mouseover', function () {
-  if (buttonTop.classList.contains('show')) {
-    buttonTop.classList.remove('show');
-    buttonTop.classList.add('hide');
+listClose.onclick = function () {
+  if (listWrap.classList.contains('show')) {
+    listWrap.classList.remove('show')
+    listWrap.classList.add('hide')
+    document.body.style.overflow = 'scroll'
   }
-})
+}
 
-var menuExit = document.querySelector('.menu-exit')
-var collapse = document.querySelector('.collapse')
-
-menuExit.addEventListener('click', function () {
-  if (collapse.classList.contains('show')) {
-    collapse.classList.remove('show');
+window.onclick = function (event) {
+  if (event.target == listWrap && listWrap.classList.contains('show')) {
+    listWrap.classList.remove('show')
+    listWrap.classList.add('hide')
+    document.body.style.overflow = 'scroll'
   }
-})
+}

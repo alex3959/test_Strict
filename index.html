@@ -17,29 +17,30 @@
 
 <body>
 
-
     <div class="header">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="nav-wrap">
                         <div class="logo"><a href="#"><img src="images/header-logo.png" alt="header-logo"></a></div>
-                        <div class="nav">
+                        <div class="nav" id="list-wrap">
                             <ul class="nav-list">
-                                <li class="nav-item"><a href="#" class="nav-links">Home</a></li>
-                                <li class="nav-item"><a href="#" class="nav-links">About us</a></li>
-                                <li class="nav-item"><a href="#" class="nav-links">Features</a></li>
-                                <li class="nav-item"><a href="#" class="nav-links">Portfolio</a></li>
-                                <li class="nav-item"><a href="#" class="nav-links">Contacts</a></li>
+                                <button class="list_close">X</button>
+                                <li class="nav-item"><a href="#Home" class="nav-links">Home</a></li>
+                                <li class="nav-item"><a href="#About" class="nav-links">About us</a></li>
+                                <li class="nav-item"><a href="#Features" class="nav-links">Features</a></li>
+                                <li class="nav-item"><a href="#Portfolio" class="nav-links">Portfolio</a></li>
+                                <li class="nav-item"><a href="#Contacts" class="nav-links">Contacts</a></li>
                             </ul>
                         </div>
+                        <button class="nav-btn" id="nav-button"></button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="banner">
+    <div class="banner" id="Home">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -57,7 +58,7 @@
         </div>
     </div>
 
-    <section class="about-section">
+    <section class="about-section" id="About">
         <a name="start"></a>
         <div class="container">
             <div class="row">
@@ -74,8 +75,7 @@
         </div>
     </section>
 
-    <section class="features-section">
-
+    <section class="features-section" id="Features">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -104,10 +104,9 @@
                 </div>
             </div>
         </div>
-
     </section>
 
-    <section class="portfolio-section">
+    <section class="portfolio-section" id="Portfolio">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -185,7 +184,7 @@
     </section>
 
 
-    <section class="contacts-section">
+    <section class="contacts-section" id="Contacts">
 
         <div class="container">
             <div class="row">
@@ -232,7 +231,8 @@
                             <ul class="footer-list">
                                 <li><a href="#" class="facebook"><i class="fab fa-facebook-square fa-3x"></i></a></li>
                                 <li><a href="#" class="twitter"><i class="fab fa-twitter-square fa-3x"></i></a></li>
-                                <li><a href="#" class="google-plus"><i class="fab fa-google-plus-square fa-3x"></i></a></li>
+                                <li><a href="#" class="google-plus"><i class="fab fa-google-plus-square fa-3x"></i></a>
+                                </li>
                                 <li><a href="#" class="linkedin"><i class="fab fa-linkedin fa-3x"></i></a></li>
                             </ul>
                         </div>

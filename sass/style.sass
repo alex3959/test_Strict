@@ -15,6 +15,24 @@ body
     justify-content: space-between
     padding-top: 31px
     padding-bottom: 31px
+    @media (max-width: 767.98px)
+        padding-top: 20px
+        padding-bottom: 20px
+
+.nav
+    @media (max-width: 991.98px)
+        display: none
+        top: 0
+        left: 0
+        position: fixed
+        z-index: 400
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, 0.6)
+        &.show
+            display: block
+        &.hide
+            display: none
 
 .nav-list
     list-style: none
@@ -24,11 +42,40 @@ body
     padding: 0
     margin: 0
     @media (max-width: 991.98px)
-        display: none
+        overflow: scroll
+        position: relative
+        padding-top: 70px
+        text-align: center
+        background-color: white
+        width: 60%
+        height: 100%
+        margin-left: -65%
+        display: block
+        &.listShow
+            transition: 0.6s
+            margin-left: 0
+
+.list_close
+    width: 33px
+    height: 33px
+    color: #15a4fa
+    position: absolute
+    top: 23px
+    right: 19px
+    border: 2px solid #15a4fa
+    border-radius: 5px
+    background-color: transparent
+    display: none
+    @media (max-width: 991.98px)
+        display: block
+
 .nav-item
     margin: 0
     padding: 0
     margin-left: 10px
+    @media (max-width: 991.98px)
+        margin-left: 0
+        margin-bottom: 20px
 .nav-links
     display: block
     padding: 7px 25px
@@ -36,10 +83,41 @@ body
     font-family: $Lato-Bold, sans-serif
     text-transform: uppercase
     border-radius: 5px
+    @media (max-width: 991.98px)
+        font-size: 18px
     &:hover
         text-decoration: none
         background-color: $nav-font-color
         color: #ffffff
+
+.nav-btn
+    width: 32px
+    height: 32px
+    background-color: transparent
+    border: 2px solid #15a4fa
+    padding: 0 0 0 6px
+    display: none
+    position: relative
+    margin-top: 3px
+    border-radius: 5px
+    &::before
+        content: '|||'
+        display: block
+        transform: rotate(90deg)
+        position: absolute
+        top: 0
+        left: 7px
+        color: #15a4fa
+        font-size: 18px
+    @media (max-width: 991.98px)
+        display: block
+    // &__icon
+    //     text-align: start
+    //     font-size: 22px
+    //     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    //     transform: rotate(90deg)
+    //     display: block
+
 /* navigation */        
 
 /* banner */
@@ -263,19 +341,19 @@ body
         border-radius: 5px
     &:hover
         .portfolio-block_hover-effect 
-            transition: opacity .5s
+            transition: opacity .6s
             opacity: 0.6
-        .portfolio-links
-            transition: opacity .5s
-            opacity: 1
+        .portfolio-item
+            transition: 0.6s
+            margin-top: 0
 
 .portfolio-links
     position: absolute
     top: 43%
     left: 39%
     width: 94px
-    opacity: 0
     display: flex
+    overflow: hidden
     justify-content: space-between
     @media (max-width: 767.98px)
         width: 105px
@@ -283,6 +361,7 @@ body
         width: 94px
         left: 36%
 .portfolio-item
+    margin-top: -50px
     width: 42px
     height: 42px
     display: block
@@ -326,6 +405,7 @@ body
         margin-bottom: 20px
         @media (max-width: 767.98px)
             margin-bottom: 15px
+            padding: 10px 10px
         &:focus
             outline: none
             border-color: #ffffff
