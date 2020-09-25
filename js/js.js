@@ -12,7 +12,7 @@ $(document).ready(function () {
     event.preventDefault();
     let id = $(this).attr('href'),
       top = $(id).offset().top;
-    $("body, html").animate({ scrollTop: top }, 1000)
+    $("body, html").animate({ scrollTop: top }, 800)
   });
 
   $(".btn_bottom").on("click", function (event) {
