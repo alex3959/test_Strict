@@ -106,7 +106,9 @@ body {
   .nav-links:hover {
     text-decoration: none;
     background-color: #15a4fa;
-    color: #ffffff; }
+    color: #ffffff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
 
 .nav-btn {
   width: 32px;
