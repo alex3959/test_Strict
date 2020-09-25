@@ -12,12 +12,18 @@ body
     & img
         max-width: 34px
         vertical-align: -5px
+        margin-right: 6px
     & a
         color: $caption-title-color
         font-size: 2em
         font-family: $Lato-Bold
         &:hover
             text-decoration: none
+    @media (max-width: 991.98px)
+        & img
+            vertical-align: -8px
+        & a
+            font-size: 1.4em
 
 /* navigation */        
 .nav-wrap
@@ -26,8 +32,8 @@ body
     padding-top: 27px
     padding-bottom: 27px
     @media (max-width: 767.98px)
-        padding-top: 20px
-        padding-bottom: 20px
+        padding-top: 15px
+        padding-bottom: 15px
 
 .nav
     margin-top: 6px
@@ -231,6 +237,8 @@ body
     color: $caption-title-color
     @media (max-width: 767.98px)
         font-size: 30px
+    @media (max-width: 575.98px)
+        font-size: 25px
     &_white
         color: #ffffff
 .caption-text

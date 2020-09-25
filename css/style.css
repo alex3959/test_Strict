@@ -14,13 +14,19 @@ body {
 
 .logo img {
   max-width: 34px;
-  vertical-align: -5px; }
+  vertical-align: -5px;
+  margin-right: 6px; }
 .logo a {
   color: #2d3950;
   font-size: 2em;
   font-family: Lato-Bold; }
   .logo a:hover {
     text-decoration: none; }
+@media (max-width: 991.98px) {
+  .logo img {
+    vertical-align: -8px; }
+  .logo a {
+    font-size: 1.4em; } }
 
 /* navigation */
 .nav-wrap {
@@ -34,8 +40,8 @@ body {
   padding-bottom: 27px; }
   @media (max-width: 767.98px) {
     .nav-wrap {
-      padding-top: 20px;
-      padding-bottom: 20px; } }
+      padding-top: 15px;
+      padding-bottom: 15px; } }
 
 .nav {
   margin-top: 6px; }
@@ -261,6 +267,9 @@ body {
   @media (max-width: 767.98px) {
     .caption-title {
       font-size: 30px; } }
+  @media (max-width: 575.98px) {
+    .caption-title {
+      font-size: 25px; } }
   .caption-title_white {
     color: #ffffff; }
 
